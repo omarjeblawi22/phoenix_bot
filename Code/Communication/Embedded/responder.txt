@@ -1,0 +1,117 @@
+#include <stdio.h>
+#include <string.h>
+#include "nvs_flash.h"
+#include "esp_wifi.h"
+#include "esp_event.h"
+#include "esp_log.h"
+#include "esp_netif.h"
+#include "freertos/FreeRTOS.h"
+#include "freertos/task.h"
+
+#define WIFI_SSID       "FTM_AP"
+#define WIFI_PASS       "12345678"
+#define WIFI_CHANNEL    6
+#define MAX_STA_CONN    4
+
+static const char *TAG = "FTM_RESPONDER";
+
+static void wifi_event_handler(void *arg, esp_event_base_t event_base,
+                               int32_t event_id, void *event_data)
+{
+    if (event_base == WIFI_EVENT) {
+        switch (event_id) {
+            case WIFI_EVENT_AP_STACONNECTED: {
+                wifi_event_ap_staconnected_t *event = (wifi_event_ap_staconnected_t *)event_data;
+                char mac_str[18];
+                snprintf(mac_str, sizeof(mac_str), "%02x:%02x:%02x:%02x:%02x:%02x",
+                         event->mac[0], event->mac[1], event->mac[2],
+                         event->mac[3], event->mac[4], event->mac[5]);
+                ESP_LOGI(TAG, "Station %s joined, AID=%d", mac_str, event->aid);
+                break;
+            }
+            case WIFI_EVENT_AP_STADISCONNECTED: {
+                wifi_event_ap_stadisconnected_t *event = (wifi_event_ap_stadisconnected_t *)event_data;
+                char mac_str[18];
+                snprintf(mac_str, sizeof(mac_str), "%02x:%02x:%02x:%02x:%02x:%02x",
+                         event->mac[0], event->mac[1], event->mac[2],
+                         event->mac[3], event->mac[4], event->mac[5]);
+                ESP_LOGI(TAG, "Station %s left, AID=%d", mac_str, event->aid);
+                break;
+            }
+            case WIFI_EVENT_FTM_REPORT: {
+                /*
+                 * The responder receives this event when an FTM session completes.
+                 * On the responder side the report fields are mostly zero; it is
+                 * included here purely for visibility / debugging.
+                 */
+                wifi_event_ftm_report_t *report = (wifi_event_ftm_report_t *)event_data;
+                if (report->status == FTM_STATUS_SUCCESS) {
+                    ESP_LOGI(TAG, "FTM session complete – RTT raw=%" PRIu32 " ns, dist=%" PRIu32 " cm",
+                             report->rtt_raw, report->dist_est);
+                } else {
+                    ESP_LOGW(TAG, "FTM session failed, status=%d", report->status);
+                }
+                break;
+            }
+            default:
+                break;
+        }
+    }
+}
+
+static void wifi_init_softap(void)
+{
+    esp_netif_create_default_wifi_ap();
+
+    wifi_init_config_t cfg = WIFI_INIT_CONFIG_DEFAULT();
+    ESP_ERROR_CHECK(esp_wifi_init(&cfg));
+
+    ESP_ERROR_CHECK(esp_event_handler_instance_register(
+        WIFI_EVENT, ESP_EVENT_ANY_ID, &wifi_event_handler, NULL, NULL));
+
+    wifi_config_t wifi_config = {
+        .ap = {
+            .ssid         = WIFI_SSID,
+            .ssid_len     = strlen(WIFI_SSID),
+            .channel      = WIFI_CHANNEL,
+            .password     = WIFI_PASS,
+            .max_connection = MAX_STA_CONN,
+            .authmode     = WIFI_AUTH_WPA2_PSK,
+            .ftm_responder = true,   /* <-- enables FTM responder role */
+        },
+    };
+
+    if (strlen(WIFI_PASS) == 0) {
+        wifi_config.ap.authmode = WIFI_AUTH_OPEN;
+    }
+
+    ESP_ERROR_CHECK(esp_wifi_set_mode(WIFI_MODE_AP));
+    ESP_ERROR_CHECK(esp_wifi_set_config(WIFI_IF_AP, &wifi_config));
+    ESP_ERROR_CHECK(esp_wifi_start());
+
+    ESP_LOGI(TAG, "FTM Responder AP started");
+    ESP_LOGI(TAG, "  SSID    : %s", WIFI_SSID);
+    ESP_LOGI(TAG, "  Channel : %d", WIFI_CHANNEL);
+}
+
+void app_main(void)
+{
+    /* NVS is required by the Wi-Fi driver */
+    esp_err_t ret = nvs_flash_init();
+    if (ret == ESP_ERR_NVS_NO_FREE_PAGES || ret == ESP_ERR_NVS_NEW_VERSION_FOUND) {
+        ESP_ERROR_CHECK(nvs_flash_erase());
+        ret = nvs_flash_init();
+    }
+    ESP_ERROR_CHECK(ret);
+
+    ESP_ERROR_CHECK(esp_netif_init());
+    ESP_ERROR_CHECK(esp_event_loop_create_default());
+
+    wifi_init_softap();
+
+    /* The AP runs indefinitely; status is printed by the event handler */
+    while (true) {
+        vTaskDelay(pdMS_TO_TICKS(10000));
+        ESP_LOGI(TAG, "Responder alive – waiting for FTM sessions…");
+    }
+}
