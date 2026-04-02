@@ -11,7 +11,7 @@ LIDAR_RANGE = 12.0
 # Obstacles: (x, y, radius)
 obstacles = [(10, 10, 4), (35, 15, 5), (15, 35, 6), (40, 40, 3), (5, 25, 2)]
 
-# The "Mental Map" (0.5 = Unknown, 0 = Empty, 1 = Wall)
+# The Map (0.5 = Unknown, 0 = Empty, 1 = Wall)
 internal_map = np.full((grid_dims, grid_dims), 0.5)
 
 
