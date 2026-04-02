@@ -1,0 +1,11 @@
+Approximate occupancy-map error: 9.6%
+This is the fraction of map pixels where the SLAM map does not match the physical-world obstacle layout.
+Average obstacle size error: about 3.9%
+Average obstacle position error: about 4.0% of the map width
+roughly 2 units on a 0–50 map
+
+So the best single-number summary is:
+
+Estimated SLAM error ≈ 10%
+
+this is an image based estimate, 
