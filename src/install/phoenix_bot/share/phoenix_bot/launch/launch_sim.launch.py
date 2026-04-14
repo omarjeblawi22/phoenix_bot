@@ -1,0 +1,1 @@
+/mnt/c/Users/mhoal/OneDrive - Koc Universitesi/Masaüstü/koc/sem 8/GradWork/dev/phoenix_bot/src/launch/launch_sim.launch.py

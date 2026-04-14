@@ -1,0 +1,348 @@
+[0.000000] (-) TimerEvent: {}
+[0.000717] (phoenix_bot) JobQueued: {'identifier': 'phoenix_bot', 'dependencies': OrderedDict()}
+[0.001618] (phoenix_bot) JobStarted: {'identifier': 'phoenix_bot'}
+[0.048809] (phoenix_bot) JobProgress: {'identifier': 'phoenix_bot', 'progress': 'cmake'}
+[0.097245] (-) TimerEvent: {}
+[0.116622] (phoenix_bot) Command: {'cmd': ['/usr/bin/cmake', '/mnt/c/Users/mhoal/OneDrive - Koc Universitesi/Masaüstü/koc/sem 8/GradWork/dev/phoenix_bot/src', '-DAMENT_CMAKE_SYMLINK_INSTALL=1', '-DCMAKE_INSTALL_PREFIX=/mnt/c/Users/mhoal/OneDrive - Koc Universitesi/Masaüstü/koc/sem 8/GradWork/dev/phoenix_bot/src/install/phoenix_bot'], 'cwd': '/mnt/c/Users/mhoal/OneDrive - Koc Universitesi/Masaüstü/koc/sem 8/GradWork/dev/phoenix_bot/src/build/phoenix_bot', 'env': OrderedDict([('LESSOPEN', '| /usr/bin/lesspipe %s'), ('USER', 'mhoalomar'), ('SHLVL', '1'), ('LD_LIBRARY_PATH', '/opt/ros/humble/opt/rviz_ogre_vendor/lib:/opt/ros/humble/lib/x86_64-linux-gnu:/opt/ros/humble/lib'), ('MOTD_SHOWN', 'update-motd'), ('HOME', '/home/mhoalomar'), ('OLDPWD', '/mnt/c/Users/mhoal/OneDrive - Koc Universitesi/Masaüstü/koc/sem 8/GradWork/dev/phoenix_bot'), ('ROS_PYTHON_VERSION', '3'), ('DBUS_SESSION_BUS_ADDRESS', 'unix:path=/run/user/1000/bus'), ('WSL_DISTRO_NAME', 'Ubuntu-22.04'), ('WAYLAND_DISPLAY', 'wayland-0'), ('ROS_DISTRO', 'humble'), ('LOGNAME', 'mhoalomar'), ('NAME', 'MohamadAZ'), ('WSL_INTEROP', '/run/WSL/312_interop'), ('PULSE_SERVER', 'unix:/mnt/wslg/PulseServer'), ('_', '/usr/bin/colcon'), ('ROS_VERSION', '2'), ('TERM', 'xterm-256color'), ('ROS_LOCALHOST_ONLY', '0'), ('PATH', '/opt/ros/humble/bin:/home/mhoalomar/.local/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/usr/lib/wsl/lib:/mnt/c/Program Files (x86)/VMware/VMware Workstation/bin/:/mnt/c/Users/mhoal/AppData/Local/Programs/Python/Python313/Scripts/:/mnt/c/Users/mhoal/AppData/Local/Programs/Python/Python313/:/mnt/c/Program Files (x86)/Common Files/Oracle/Java/java8path:/mnt/c/Program Files (x86)/Common Files/Oracle/Java/javapath:/mnt/c/windows/system32:/mnt/c/windows:/mnt/c/windows/System32/Wbem:/mnt/c/windows/System32/WindowsPowerShell/v1.0/:/mnt/c/windows/System32/OpenSSH/:/mnt/c/Program Files (x86)/Pulse Secure/VC142.CRT/X64/:/mnt/c/Program Files (x86)/Pulse Secure/VC142.CRT/X86/:/mnt/c/Program Files (x86)/Common Files/Pulse Secure/TNC Client Plugin/:/mnt/c/Program Files/HP/HP One Agent:/mnt/c/WINDOWS/system32:/mnt/c/WINDOWS:/mnt/c/WINDOWS/System32/Wbem:/mnt/c/WINDOWS/System32/WindowsPowerShell/v1.0/:/mnt/c/WINDOWS/System32/OpenSSH/:/mnt/c/Program Files/dotnet/:/mnt/c/Program Files/Calibre2/:/mnt/c/Program Files/Git/cmd:/mnt/c/Program Files/nodejs/:/mnt/c/ProgramData/chocolatey/bin:/mnt/c/Program Files/MySQL/MySQL Shell 8.0/bin/:/mnt/c/Users/mhoal/AppData/Local/Programs/Python/Python310/Scripts/:/mnt/c/Users/mhoal/AppData/Local/Programs/Python/Python310/:/mnt/c/Users/mhoal/AppData/Local/Programs/Python/Python312/Scripts/:/mnt/c/Users/mhoal/AppData/Local/Programs/Python/Python312/:/mnt/c/Users/mhoal/AppData/Local/Microsoft/WindowsApps:/mnt/c/Users/mhoal/AppData/Local/Programs/Microsoft VS Code/bin:/mnt/c/Users/mhoal/anaconda3/Library/bin:/mnt/c/Users/mhoal/anaconda3/Scripts:/mnt/c/Users/mhoal/anaconda3/condabin:/mnt/c/Users/mhoal/AppData/Roaming/npm:/mnt/c/Users/mhoal/.dotnet/tools:/mnt/c/Users/mhoal/AppData/Local/Programs/Antigravity/bin:/mnt/c/Users/mhoal/AppData/Local/GitHubDesktop/bin:/snap/bin'), ('XDG_RUNTIME_DIR', '/run/user/1000/'), ('DISPLAY', ':0'), ('LANG', 'en_US.UTF-8'), ('LS_COLORS', 'rs=0:di=01;34:ln=01;36:mh=00:pi=40;33:so=01;35:do=01;35:bd=40;33;01:cd=40;33;01:or=40;31;01:mi=00:su=37;41:sg=30;43:ca=30;41:tw=30;42:ow=34;42:st=37;44:ex=01;32:*.tar=01;31:*.tgz=01;31:*.arc=01;31:*.arj=01;31:*.taz=01;31:*.lha=01;31:*.lz4=01;31:*.lzh=01;31:*.lzma=01;31:*.tlz=01;31:*.txz=01;31:*.tzo=01;31:*.t7z=01;31:*.zip=01;31:*.z=01;31:*.dz=01;31:*.gz=01;31:*.lrz=01;31:*.lz=01;31:*.lzo=01;31:*.xz=01;31:*.zst=01;31:*.tzst=01;31:*.bz2=01;31:*.bz=01;31:*.tbz=01;31:*.tbz2=01;31:*.tz=01;31:*.deb=01;31:*.rpm=01;31:*.jar=01;31:*.war=01;31:*.ear=01;31:*.sar=01;31:*.rar=01;31:*.alz=01;31:*.ace=01;31:*.zoo=01;31:*.cpio=01;31:*.7z=01;31:*.rz=01;31:*.cab=01;31:*.wim=01;31:*.swm=01;31:*.dwm=01;31:*.esd=01;31:*.jpg=01;35:*.jpeg=01;35:*.mjpg=01;35:*.mjpeg=01;35:*.gif=01;35:*.bmp=01;35:*.pbm=01;35:*.pgm=01;35:*.ppm=01;35:*.tga=01;35:*.xbm=01;35:*.xpm=01;35:*.tif=01;35:*.tiff=01;35:*.png=01;35:*.svg=01;35:*.svgz=01;35:*.mng=01;35:*.pcx=01;35:*.mov=01;35:*.mpg=01;35:*.mpeg=01;35:*.m2v=01;35:*.mkv=01;35:*.webm=01;35:*.webp=01;35:*.ogm=01;35:*.mp4=01;35:*.m4v=01;35:*.mp4v=01;35:*.vob=01;35:*.qt=01;35:*.nuv=01;35:*.wmv=01;35:*.asf=01;35:*.rm=01;35:*.rmvb=01;35:*.flc=01;35:*.avi=01;35:*.fli=01;35:*.flv=01;35:*.gl=01;35:*.dl=01;35:*.xcf=01;35:*.xwd=01;35:*.yuv=01;35:*.cgm=01;35:*.emf=01;35:*.ogv=01;35:*.ogx=01;35:*.aac=00;36:*.au=00;36:*.flac=00;36:*.m4a=00;36:*.mid=00;36:*.midi=00;36:*.mka=00;36:*.mp3=00;36:*.mpc=00;36:*.ogg=00;36:*.ra=00;36:*.wav=00;36:*.oga=00;36:*.opus=00;36:*.spx=00;36:*.xspf=00;36:'), ('AMENT_PREFIX_PATH', '/opt/ros/humble'), ('SHELL', '/bin/bash'), ('LESSCLOSE', '/usr/bin/lesspipe %s %s'), ('PWD', '/mnt/c/Users/mhoal/OneDrive - Koc Universitesi/Masaüstü/koc/sem 8/GradWork/dev/phoenix_bot/src/build/phoenix_bot'), ('XDG_DATA_DIRS', '/usr/local/share:/usr/share:/var/lib/snapd/desktop'), ('PYTHONPATH', '/opt/ros/humble/lib/python3.10/site-packages:/opt/ros/humble/local/lib/python3.10/dist-packages'), ('COLCON', '1'), ('WSL2_GUI_APPS_ENABLED', '1'), ('HOSTTYPE', 'x86_64'), ('WSLENV', ''), ('CMAKE_PREFIX_PATH', '/opt/ros/humble')]), 'shell': False}
+[0.197501] (-) TimerEvent: {}
+[0.298739] (-) TimerEvent: {}
+[0.399675] (-) TimerEvent: {}
+[0.500704] (-) TimerEvent: {}
+[0.601466] (-) TimerEvent: {}
+[0.702126] (-) TimerEvent: {}
+[0.788259] (phoenix_bot) StdoutLine: {'line': b'-- The C compiler identification is GNU 11.4.0\n'}
+[0.802263] (-) TimerEvent: {}
+[0.902946] (-) TimerEvent: {}
+[1.003608] (-) TimerEvent: {}
+[1.104325] (-) TimerEvent: {}
+[1.205283] (-) TimerEvent: {}
+[1.306558] (-) TimerEvent: {}
+[1.407336] (-) TimerEvent: {}
+[1.508244] (-) TimerEvent: {}
+[1.608978] (-) TimerEvent: {}
+[1.709700] (-) TimerEvent: {}
+[1.810579] (-) TimerEvent: {}
+[1.911550] (-) TimerEvent: {}
+[2.012686] (-) TimerEvent: {}
+[2.114278] (-) TimerEvent: {}
+[2.215027] (-) TimerEvent: {}
+[2.315638] (-) TimerEvent: {}
+[2.340315] (phoenix_bot) StdoutLine: {'line': b'-- The CXX compiler identification is GNU 11.4.0\n'}
+[2.415811] (-) TimerEvent: {}
+[2.516888] (-) TimerEvent: {}
+[2.618101] (-) TimerEvent: {}
+[2.719554] (-) TimerEvent: {}
+[2.820822] (-) TimerEvent: {}
+[2.921632] (-) TimerEvent: {}
+[3.022402] (-) TimerEvent: {}
+[3.123694] (-) TimerEvent: {}
+[3.225852] (-) TimerEvent: {}
+[3.327794] (-) TimerEvent: {}
+[3.428663] (-) TimerEvent: {}
+[3.529532] (-) TimerEvent: {}
+[3.586219] (phoenix_bot) StdoutLine: {'line': b'-- Detecting C compiler ABI info\n'}
+[3.629711] (-) TimerEvent: {}
+[3.730713] (-) TimerEvent: {}
+[3.831547] (-) TimerEvent: {}
+[3.932723] (-) TimerEvent: {}
+[4.033784] (-) TimerEvent: {}
+[4.134462] (-) TimerEvent: {}
+[4.235076] (-) TimerEvent: {}
+[4.336088] (-) TimerEvent: {}
+[4.437222] (-) TimerEvent: {}
+[4.538146] (-) TimerEvent: {}
+[4.639942] (-) TimerEvent: {}
+[4.741541] (-) TimerEvent: {}
+[4.843163] (-) TimerEvent: {}
+[4.944665] (-) TimerEvent: {}
+[5.047261] (-) TimerEvent: {}
+[5.149186] (-) TimerEvent: {}
+[5.250067] (-) TimerEvent: {}
+[5.350999] (-) TimerEvent: {}
+[5.451853] (-) TimerEvent: {}
+[5.496794] (phoenix_bot) StdoutLine: {'line': b'-- Detecting C compiler ABI info - done\n'}
+[5.552049] (-) TimerEvent: {}
+[5.567020] (phoenix_bot) StdoutLine: {'line': b'-- Check for working C compiler: /usr/bin/cc - skipped\n'}
+[5.569921] (phoenix_bot) StdoutLine: {'line': b'-- Detecting C compile features\n'}
+[5.572178] (phoenix_bot) StdoutLine: {'line': b'-- Detecting C compile features - done\n'}
+[5.652731] (-) TimerEvent: {}
+[5.706881] (phoenix_bot) StdoutLine: {'line': b'-- Detecting CXX compiler ABI info\n'}
+[5.752886] (-) TimerEvent: {}
+[5.853896] (-) TimerEvent: {}
+[5.955444] (-) TimerEvent: {}
+[6.056277] (-) TimerEvent: {}
+[6.157048] (-) TimerEvent: {}
+[6.258011] (-) TimerEvent: {}
+[6.358763] (-) TimerEvent: {}
+[6.459359] (-) TimerEvent: {}
+[6.560280] (-) TimerEvent: {}
+[6.661119] (-) TimerEvent: {}
+[6.761876] (-) TimerEvent: {}
+[6.815945] (phoenix_bot) StdoutLine: {'line': b'-- Detecting CXX compiler ABI info - done\n'}
+[6.862238] (-) TimerEvent: {}
+[6.869917] (phoenix_bot) StdoutLine: {'line': b'-- Check for working CXX compiler: /usr/bin/c++ - skipped\n'}
+[6.873400] (phoenix_bot) StdoutLine: {'line': b'-- Detecting CXX compile features\n'}
+[6.875987] (phoenix_bot) StdoutLine: {'line': b'-- Detecting CXX compile features - done\n'}
+[6.962404] (-) TimerEvent: {}
+[6.973237] (phoenix_bot) StdoutLine: {'line': b'-- Found ament_cmake: 1.3.14 (/opt/ros/humble/share/ament_cmake/cmake)\n'}
+[7.062575] (-) TimerEvent: {}
+[7.105015] (phoenix_bot) StdoutLine: {'line': b'-- Found Python3: /usr/bin/python3 (found version "3.10.12") found components: Interpreter \n'}
+[7.162720] (-) TimerEvent: {}
+[7.263398] (-) TimerEvent: {}
+[7.295015] (phoenix_bot) StdoutLine: {'line': b'-- Override CMake install command with custom implementation using symlinks instead of copying resources\n'}
+[7.363543] (-) TimerEvent: {}
+[7.464341] (-) TimerEvent: {}
+[7.505986] (phoenix_bot) StdoutLine: {'line': b'-- Found ament_lint_auto: 0.12.15 (/opt/ros/humble/share/ament_lint_auto/cmake)\n'}
+[7.564480] (-) TimerEvent: {}
+[7.665261] (-) TimerEvent: {}
+[7.766351] (-) TimerEvent: {}
+[7.867908] (-) TimerEvent: {}
+[7.969640] (-) TimerEvent: {}
+[8.071532] (-) TimerEvent: {}
+[8.172571] (-) TimerEvent: {}
+[8.273879] (-) TimerEvent: {}
+[8.374802] (-) TimerEvent: {}
+[8.475802] (-) TimerEvent: {}
+[8.576740] (-) TimerEvent: {}
+[8.665981] (phoenix_bot) StdoutLine: {'line': b"-- Added test 'copyright' to check source files copyright and LICENSE\n"}
+[8.676945] (-) TimerEvent: {}
+[8.777832] (-) TimerEvent: {}
+[8.878929] (-) TimerEvent: {}
+[8.979984] (-) TimerEvent: {}
+[9.080732] (-) TimerEvent: {}
+[9.181598] (-) TimerEvent: {}
+[9.283057] (-) TimerEvent: {}
+[9.384199] (-) TimerEvent: {}
+[9.485448] (-) TimerEvent: {}
+[9.586301] (-) TimerEvent: {}
+[9.687100] (-) TimerEvent: {}
+[9.787828] (-) TimerEvent: {}
+[9.888439] (-) TimerEvent: {}
+[9.989230] (-) TimerEvent: {}
+[10.090247] (-) TimerEvent: {}
+[10.191265] (-) TimerEvent: {}
+[10.292674] (-) TimerEvent: {}
+[10.393280] (-) TimerEvent: {}
+[10.493999] (-) TimerEvent: {}
+[10.594838] (-) TimerEvent: {}
+[10.695522] (-) TimerEvent: {}
+[10.796099] (-) TimerEvent: {}
+[10.896883] (-) TimerEvent: {}
+[10.997596] (-) TimerEvent: {}
+[11.098959] (-) TimerEvent: {}
+[11.199787] (-) TimerEvent: {}
+[11.300706] (-) TimerEvent: {}
+[11.401675] (-) TimerEvent: {}
+[11.502470] (-) TimerEvent: {}
+[11.603157] (-) TimerEvent: {}
+[11.704216] (-) TimerEvent: {}
+[11.805132] (-) TimerEvent: {}
+[11.906124] (-) TimerEvent: {}
+[12.007199] (-) TimerEvent: {}
+[12.108067] (-) TimerEvent: {}
+[12.208825] (-) TimerEvent: {}
+[12.309504] (-) TimerEvent: {}
+[12.410005] (-) TimerEvent: {}
+[12.510703] (-) TimerEvent: {}
+[12.611565] (-) TimerEvent: {}
+[12.625046] (phoenix_bot) StdoutLine: {'line': b"-- Added test 'cppcheck' to perform static code analysis on C / C++ code\n"}
+[12.627075] (phoenix_bot) StdoutLine: {'line': b'-- Configured cppcheck include dirs: \n'}
+[12.628500] (phoenix_bot) StdoutLine: {'line': b'-- Configured cppcheck exclude dirs and/or files: \n'}
+[12.711836] (-) TimerEvent: {}
+[12.812789] (-) TimerEvent: {}
+[12.913771] (-) TimerEvent: {}
+[13.014867] (-) TimerEvent: {}
+[13.116012] (-) TimerEvent: {}
+[13.216839] (-) TimerEvent: {}
+[13.317686] (-) TimerEvent: {}
+[13.418295] (-) TimerEvent: {}
+[13.518892] (-) TimerEvent: {}
+[13.619978] (-) TimerEvent: {}
+[13.720778] (-) TimerEvent: {}
+[13.821525] (-) TimerEvent: {}
+[13.922466] (-) TimerEvent: {}
+[14.023129] (-) TimerEvent: {}
+[14.124457] (-) TimerEvent: {}
+[14.225740] (-) TimerEvent: {}
+[14.326684] (-) TimerEvent: {}
+[14.427665] (-) TimerEvent: {}
+[14.528424] (-) TimerEvent: {}
+[14.629275] (-) TimerEvent: {}
+[14.730511] (-) TimerEvent: {}
+[14.832142] (-) TimerEvent: {}
+[14.933907] (-) TimerEvent: {}
+[15.034584] (-) TimerEvent: {}
+[15.135501] (-) TimerEvent: {}
+[15.237565] (-) TimerEvent: {}
+[15.338434] (-) TimerEvent: {}
+[15.439284] (-) TimerEvent: {}
+[15.540340] (-) TimerEvent: {}
+[15.641217] (-) TimerEvent: {}
+[15.742128] (-) TimerEvent: {}
+[15.842829] (-) TimerEvent: {}
+[15.943657] (-) TimerEvent: {}
+[16.044553] (-) TimerEvent: {}
+[16.145283] (-) TimerEvent: {}
+[16.246102] (-) TimerEvent: {}
+[16.346896] (-) TimerEvent: {}
+[16.447679] (-) TimerEvent: {}
+[16.548673] (-) TimerEvent: {}
+[16.645100] (phoenix_bot) StdoutLine: {'line': b"-- Added test 'cpplint' to check C / C++ code against the Google style\n"}
+[16.646823] (phoenix_bot) StdoutLine: {'line': b'-- Configured cpplint exclude dirs and/or files: \n'}
+[16.648740] (-) TimerEvent: {}
+[16.749409] (-) TimerEvent: {}
+[16.850339] (-) TimerEvent: {}
+[16.951072] (-) TimerEvent: {}
+[17.051971] (-) TimerEvent: {}
+[17.112694] (phoenix_bot) StdoutLine: {'line': b"-- Added test 'flake8' to check Python code syntax and style conventions\n"}
+[17.152146] (-) TimerEvent: {}
+[17.252957] (-) TimerEvent: {}
+[17.353730] (-) TimerEvent: {}
+[17.454577] (-) TimerEvent: {}
+[17.555382] (-) TimerEvent: {}
+[17.656326] (-) TimerEvent: {}
+[17.757448] (-) TimerEvent: {}
+[17.858040] (-) TimerEvent: {}
+[17.958997] (-) TimerEvent: {}
+[18.060258] (-) TimerEvent: {}
+[18.091481] (phoenix_bot) StdoutLine: {'line': b"-- Added test 'lint_cmake' to check CMake code style\n"}
+[18.160407] (-) TimerEvent: {}
+[18.261043] (-) TimerEvent: {}
+[18.361835] (-) TimerEvent: {}
+[18.462663] (-) TimerEvent: {}
+[18.532153] (phoenix_bot) StdoutLine: {'line': b"-- Added test 'pep257' to check Python code against some of the docstring style conventions in PEP 257\n"}
+[18.562807] (-) TimerEvent: {}
+[18.664233] (-) TimerEvent: {}
+[18.765010] (-) TimerEvent: {}
+[18.865810] (-) TimerEvent: {}
+[18.966899] (-) TimerEvent: {}
+[19.067699] (-) TimerEvent: {}
+[19.168833] (-) TimerEvent: {}
+[19.269643] (-) TimerEvent: {}
+[19.370250] (-) TimerEvent: {}
+[19.471325] (-) TimerEvent: {}
+[19.572213] (-) TimerEvent: {}
+[19.673172] (-) TimerEvent: {}
+[19.774195] (-) TimerEvent: {}
+[19.875066] (-) TimerEvent: {}
+[19.976153] (-) TimerEvent: {}
+[20.076929] (-) TimerEvent: {}
+[20.178024] (-) TimerEvent: {}
+[20.278741] (-) TimerEvent: {}
+[20.379661] (-) TimerEvent: {}
+[20.480641] (-) TimerEvent: {}
+[20.581466] (-) TimerEvent: {}
+[20.682627] (-) TimerEvent: {}
+[20.783298] (-) TimerEvent: {}
+[20.884005] (-) TimerEvent: {}
+[20.984843] (-) TimerEvent: {}
+[21.085992] (-) TimerEvent: {}
+[21.187347] (-) TimerEvent: {}
+[21.288164] (-) TimerEvent: {}
+[21.388877] (-) TimerEvent: {}
+[21.489570] (-) TimerEvent: {}
+[21.590771] (-) TimerEvent: {}
+[21.691585] (-) TimerEvent: {}
+[21.792537] (-) TimerEvent: {}
+[21.893234] (-) TimerEvent: {}
+[21.994149] (-) TimerEvent: {}
+[22.094910] (-) TimerEvent: {}
+[22.195708] (-) TimerEvent: {}
+[22.296482] (-) TimerEvent: {}
+[22.397095] (-) TimerEvent: {}
+[22.434336] (phoenix_bot) StdoutLine: {'line': b"-- Added test 'uncrustify' to check C / C++ code style\n"}
+[22.436070] (phoenix_bot) StdoutLine: {'line': b'-- Configured uncrustify additional arguments: \n'}
+[22.497248] (-) TimerEvent: {}
+[22.598050] (-) TimerEvent: {}
+[22.698864] (-) TimerEvent: {}
+[22.799660] (-) TimerEvent: {}
+[22.900353] (-) TimerEvent: {}
+[22.937708] (phoenix_bot) StdoutLine: {'line': b"-- Added test 'xmllint' to check XML markup files\n"}
+[23.000507] (-) TimerEvent: {}
+[23.101109] (-) TimerEvent: {}
+[23.193894] (phoenix_bot) StdoutLine: {'line': b'-- Configuring done\n'}
+[23.201278] (-) TimerEvent: {}
+[23.302369] (-) TimerEvent: {}
+[23.403665] (-) TimerEvent: {}
+[23.504354] (-) TimerEvent: {}
+[23.605219] (-) TimerEvent: {}
+[23.690712] (phoenix_bot) StdoutLine: {'line': b'-- Generating done\n'}
+[23.705371] (-) TimerEvent: {}
+[23.806042] (-) TimerEvent: {}
+[23.906577] (-) TimerEvent: {}
+[24.007711] (phoenix_bot) StdoutLine: {'line': b'-- Build files have been written to: /mnt/c/Users/mhoal/OneDrive - Koc Universitesi/Masa\xc3\xbcst\xc3\xbc/koc/sem 8/GradWork/dev/phoenix_bot/src/build/phoenix_bot\n'}
+[24.009357] (-) TimerEvent: {}
+[24.014478] (phoenix_bot) CommandEnded: {'returncode': 0}
+[24.021482] (phoenix_bot) JobProgress: {'identifier': 'phoenix_bot', 'progress': 'build'}
+[24.028681] (phoenix_bot) Command: {'cmd': ['/usr/bin/cmake', '--build', '/mnt/c/Users/mhoal/OneDrive - Koc Universitesi/Masaüstü/koc/sem 8/GradWork/dev/phoenix_bot/src/build/phoenix_bot', '--', '-j16', '-l16'], 'cwd': '/mnt/c/Users/mhoal/OneDrive - Koc Universitesi/Masaüstü/koc/sem 8/GradWork/dev/phoenix_bot/src/build/phoenix_bot', 'env': OrderedDict([('LESSOPEN', '| /usr/bin/lesspipe %s'), ('USER', 'mhoalomar'), ('SHLVL', '1'), ('LD_LIBRARY_PATH', '/opt/ros/humble/opt/rviz_ogre_vendor/lib:/opt/ros/humble/lib/x86_64-linux-gnu:/opt/ros/humble/lib'), ('MOTD_SHOWN', 'update-motd'), ('HOME', '/home/mhoalomar'), ('OLDPWD', '/mnt/c/Users/mhoal/OneDrive - Koc Universitesi/Masaüstü/koc/sem 8/GradWork/dev/phoenix_bot'), ('ROS_PYTHON_VERSION', '3'), ('DBUS_SESSION_BUS_ADDRESS', 'unix:path=/run/user/1000/bus'), ('WSL_DISTRO_NAME', 'Ubuntu-22.04'), ('WAYLAND_DISPLAY', 'wayland-0'), ('ROS_DISTRO', 'humble'), ('LOGNAME', 'mhoalomar'), ('NAME', 'MohamadAZ'), ('WSL_INTEROP', '/run/WSL/312_interop'), ('PULSE_SERVER', 'unix:/mnt/wslg/PulseServer'), ('_', '/usr/bin/colcon'), ('ROS_VERSION', '2'), ('TERM', 'xterm-256color'), ('ROS_LOCALHOST_ONLY', '0'), ('PATH', '/opt/ros/humble/bin:/home/mhoalomar/.local/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/usr/lib/wsl/lib:/mnt/c/Program Files (x86)/VMware/VMware Workstation/bin/:/mnt/c/Users/mhoal/AppData/Local/Programs/Python/Python313/Scripts/:/mnt/c/Users/mhoal/AppData/Local/Programs/Python/Python313/:/mnt/c/Program Files (x86)/Common Files/Oracle/Java/java8path:/mnt/c/Program Files (x86)/Common Files/Oracle/Java/javapath:/mnt/c/windows/system32:/mnt/c/windows:/mnt/c/windows/System32/Wbem:/mnt/c/windows/System32/WindowsPowerShell/v1.0/:/mnt/c/windows/System32/OpenSSH/:/mnt/c/Program Files (x86)/Pulse Secure/VC142.CRT/X64/:/mnt/c/Program Files (x86)/Pulse Secure/VC142.CRT/X86/:/mnt/c/Program Files (x86)/Common Files/Pulse Secure/TNC Client Plugin/:/mnt/c/Program Files/HP/HP One Agent:/mnt/c/WINDOWS/system32:/mnt/c/WINDOWS:/mnt/c/WINDOWS/System32/Wbem:/mnt/c/WINDOWS/System32/WindowsPowerShell/v1.0/:/mnt/c/WINDOWS/System32/OpenSSH/:/mnt/c/Program Files/dotnet/:/mnt/c/Program Files/Calibre2/:/mnt/c/Program Files/Git/cmd:/mnt/c/Program Files/nodejs/:/mnt/c/ProgramData/chocolatey/bin:/mnt/c/Program Files/MySQL/MySQL Shell 8.0/bin/:/mnt/c/Users/mhoal/AppData/Local/Programs/Python/Python310/Scripts/:/mnt/c/Users/mhoal/AppData/Local/Programs/Python/Python310/:/mnt/c/Users/mhoal/AppData/Local/Programs/Python/Python312/Scripts/:/mnt/c/Users/mhoal/AppData/Local/Programs/Python/Python312/:/mnt/c/Users/mhoal/AppData/Local/Microsoft/WindowsApps:/mnt/c/Users/mhoal/AppData/Local/Programs/Microsoft VS Code/bin:/mnt/c/Users/mhoal/anaconda3/Library/bin:/mnt/c/Users/mhoal/anaconda3/Scripts:/mnt/c/Users/mhoal/anaconda3/condabin:/mnt/c/Users/mhoal/AppData/Roaming/npm:/mnt/c/Users/mhoal/.dotnet/tools:/mnt/c/Users/mhoal/AppData/Local/Programs/Antigravity/bin:/mnt/c/Users/mhoal/AppData/Local/GitHubDesktop/bin:/snap/bin'), ('XDG_RUNTIME_DIR', '/run/user/1000/'), ('DISPLAY', ':0'), ('LANG', 'en_US.UTF-8'), ('LS_COLORS', 'rs=0:di=01;34:ln=01;36:mh=00:pi=40;33:so=01;35:do=01;35:bd=40;33;01:cd=40;33;01:or=40;31;01:mi=00:su=37;41:sg=30;43:ca=30;41:tw=30;42:ow=34;42:st=37;44:ex=01;32:*.tar=01;31:*.tgz=01;31:*.arc=01;31:*.arj=01;31:*.taz=01;31:*.lha=01;31:*.lz4=01;31:*.lzh=01;31:*.lzma=01;31:*.tlz=01;31:*.txz=01;31:*.tzo=01;31:*.t7z=01;31:*.zip=01;31:*.z=01;31:*.dz=01;31:*.gz=01;31:*.lrz=01;31:*.lz=01;31:*.lzo=01;31:*.xz=01;31:*.zst=01;31:*.tzst=01;31:*.bz2=01;31:*.bz=01;31:*.tbz=01;31:*.tbz2=01;31:*.tz=01;31:*.deb=01;31:*.rpm=01;31:*.jar=01;31:*.war=01;31:*.ear=01;31:*.sar=01;31:*.rar=01;31:*.alz=01;31:*.ace=01;31:*.zoo=01;31:*.cpio=01;31:*.7z=01;31:*.rz=01;31:*.cab=01;31:*.wim=01;31:*.swm=01;31:*.dwm=01;31:*.esd=01;31:*.jpg=01;35:*.jpeg=01;35:*.mjpg=01;35:*.mjpeg=01;35:*.gif=01;35:*.bmp=01;35:*.pbm=01;35:*.pgm=01;35:*.ppm=01;35:*.tga=01;35:*.xbm=01;35:*.xpm=01;35:*.tif=01;35:*.tiff=01;35:*.png=01;35:*.svg=01;35:*.svgz=01;35:*.mng=01;35:*.pcx=01;35:*.mov=01;35:*.mpg=01;35:*.mpeg=01;35:*.m2v=01;35:*.mkv=01;35:*.webm=01;35:*.webp=01;35:*.ogm=01;35:*.mp4=01;35:*.m4v=01;35:*.mp4v=01;35:*.vob=01;35:*.qt=01;35:*.nuv=01;35:*.wmv=01;35:*.asf=01;35:*.rm=01;35:*.rmvb=01;35:*.flc=01;35:*.avi=01;35:*.fli=01;35:*.flv=01;35:*.gl=01;35:*.dl=01;35:*.xcf=01;35:*.xwd=01;35:*.yuv=01;35:*.cgm=01;35:*.emf=01;35:*.ogv=01;35:*.ogx=01;35:*.aac=00;36:*.au=00;36:*.flac=00;36:*.m4a=00;36:*.mid=00;36:*.midi=00;36:*.mka=00;36:*.mp3=00;36:*.mpc=00;36:*.ogg=00;36:*.ra=00;36:*.wav=00;36:*.oga=00;36:*.opus=00;36:*.spx=00;36:*.xspf=00;36:'), ('AMENT_PREFIX_PATH', '/opt/ros/humble'), ('SHELL', '/bin/bash'), ('LESSCLOSE', '/usr/bin/lesspipe %s %s'), ('PWD', '/mnt/c/Users/mhoal/OneDrive - Koc Universitesi/Masaüstü/koc/sem 8/GradWork/dev/phoenix_bot/src/build/phoenix_bot'), ('XDG_DATA_DIRS', '/usr/local/share:/usr/share:/var/lib/snapd/desktop'), ('PYTHONPATH', '/opt/ros/humble/lib/python3.10/site-packages:/opt/ros/humble/local/lib/python3.10/dist-packages'), ('COLCON', '1'), ('WSL2_GUI_APPS_ENABLED', '1'), ('HOSTTYPE', 'x86_64'), ('WSLENV', ''), ('CMAKE_PREFIX_PATH', '/opt/ros/humble')]), 'shell': False}
+[24.109513] (-) TimerEvent: {}
+[24.184823] (phoenix_bot) CommandEnded: {'returncode': 0}
+[24.208670] (phoenix_bot) JobProgress: {'identifier': 'phoenix_bot', 'progress': 'install'}
+[24.209793] (-) TimerEvent: {}
+[24.222733] (phoenix_bot) Command: {'cmd': ['/usr/bin/cmake', '--install', '/mnt/c/Users/mhoal/OneDrive - Koc Universitesi/Masaüstü/koc/sem 8/GradWork/dev/phoenix_bot/src/build/phoenix_bot'], 'cwd': '/mnt/c/Users/mhoal/OneDrive - Koc Universitesi/Masaüstü/koc/sem 8/GradWork/dev/phoenix_bot/src/build/phoenix_bot', 'env': OrderedDict([('LESSOPEN', '| /usr/bin/lesspipe %s'), ('USER', 'mhoalomar'), ('SHLVL', '1'), ('LD_LIBRARY_PATH', '/opt/ros/humble/opt/rviz_ogre_vendor/lib:/opt/ros/humble/lib/x86_64-linux-gnu:/opt/ros/humble/lib'), ('MOTD_SHOWN', 'update-motd'), ('HOME', '/home/mhoalomar'), ('OLDPWD', '/mnt/c/Users/mhoal/OneDrive - Koc Universitesi/Masaüstü/koc/sem 8/GradWork/dev/phoenix_bot'), ('ROS_PYTHON_VERSION', '3'), ('DBUS_SESSION_BUS_ADDRESS', 'unix:path=/run/user/1000/bus'), ('WSL_DISTRO_NAME', 'Ubuntu-22.04'), ('WAYLAND_DISPLAY', 'wayland-0'), ('ROS_DISTRO', 'humble'), ('LOGNAME', 'mhoalomar'), ('NAME', 'MohamadAZ'), ('WSL_INTEROP', '/run/WSL/312_interop'), ('PULSE_SERVER', 'unix:/mnt/wslg/PulseServer'), ('_', '/usr/bin/colcon'), ('ROS_VERSION', '2'), ('TERM', 'xterm-256color'), ('ROS_LOCALHOST_ONLY', '0'), ('PATH', '/opt/ros/humble/bin:/home/mhoalomar/.local/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/usr/lib/wsl/lib:/mnt/c/Program Files (x86)/VMware/VMware Workstation/bin/:/mnt/c/Users/mhoal/AppData/Local/Programs/Python/Python313/Scripts/:/mnt/c/Users/mhoal/AppData/Local/Programs/Python/Python313/:/mnt/c/Program Files (x86)/Common Files/Oracle/Java/java8path:/mnt/c/Program Files (x86)/Common Files/Oracle/Java/javapath:/mnt/c/windows/system32:/mnt/c/windows:/mnt/c/windows/System32/Wbem:/mnt/c/windows/System32/WindowsPowerShell/v1.0/:/mnt/c/windows/System32/OpenSSH/:/mnt/c/Program Files (x86)/Pulse Secure/VC142.CRT/X64/:/mnt/c/Program Files (x86)/Pulse Secure/VC142.CRT/X86/:/mnt/c/Program Files (x86)/Common Files/Pulse Secure/TNC Client Plugin/:/mnt/c/Program Files/HP/HP One Agent:/mnt/c/WINDOWS/system32:/mnt/c/WINDOWS:/mnt/c/WINDOWS/System32/Wbem:/mnt/c/WINDOWS/System32/WindowsPowerShell/v1.0/:/mnt/c/WINDOWS/System32/OpenSSH/:/mnt/c/Program Files/dotnet/:/mnt/c/Program Files/Calibre2/:/mnt/c/Program Files/Git/cmd:/mnt/c/Program Files/nodejs/:/mnt/c/ProgramData/chocolatey/bin:/mnt/c/Program Files/MySQL/MySQL Shell 8.0/bin/:/mnt/c/Users/mhoal/AppData/Local/Programs/Python/Python310/Scripts/:/mnt/c/Users/mhoal/AppData/Local/Programs/Python/Python310/:/mnt/c/Users/mhoal/AppData/Local/Programs/Python/Python312/Scripts/:/mnt/c/Users/mhoal/AppData/Local/Programs/Python/Python312/:/mnt/c/Users/mhoal/AppData/Local/Microsoft/WindowsApps:/mnt/c/Users/mhoal/AppData/Local/Programs/Microsoft VS Code/bin:/mnt/c/Users/mhoal/anaconda3/Library/bin:/mnt/c/Users/mhoal/anaconda3/Scripts:/mnt/c/Users/mhoal/anaconda3/condabin:/mnt/c/Users/mhoal/AppData/Roaming/npm:/mnt/c/Users/mhoal/.dotnet/tools:/mnt/c/Users/mhoal/AppData/Local/Programs/Antigravity/bin:/mnt/c/Users/mhoal/AppData/Local/GitHubDesktop/bin:/snap/bin'), ('XDG_RUNTIME_DIR', '/run/user/1000/'), ('DISPLAY', ':0'), ('LANG', 'en_US.UTF-8'), ('LS_COLORS', 'rs=0:di=01;34:ln=01;36:mh=00:pi=40;33:so=01;35:do=01;35:bd=40;33;01:cd=40;33;01:or=40;31;01:mi=00:su=37;41:sg=30;43:ca=30;41:tw=30;42:ow=34;42:st=37;44:ex=01;32:*.tar=01;31:*.tgz=01;31:*.arc=01;31:*.arj=01;31:*.taz=01;31:*.lha=01;31:*.lz4=01;31:*.lzh=01;31:*.lzma=01;31:*.tlz=01;31:*.txz=01;31:*.tzo=01;31:*.t7z=01;31:*.zip=01;31:*.z=01;31:*.dz=01;31:*.gz=01;31:*.lrz=01;31:*.lz=01;31:*.lzo=01;31:*.xz=01;31:*.zst=01;31:*.tzst=01;31:*.bz2=01;31:*.bz=01;31:*.tbz=01;31:*.tbz2=01;31:*.tz=01;31:*.deb=01;31:*.rpm=01;31:*.jar=01;31:*.war=01;31:*.ear=01;31:*.sar=01;31:*.rar=01;31:*.alz=01;31:*.ace=01;31:*.zoo=01;31:*.cpio=01;31:*.7z=01;31:*.rz=01;31:*.cab=01;31:*.wim=01;31:*.swm=01;31:*.dwm=01;31:*.esd=01;31:*.jpg=01;35:*.jpeg=01;35:*.mjpg=01;35:*.mjpeg=01;35:*.gif=01;35:*.bmp=01;35:*.pbm=01;35:*.pgm=01;35:*.ppm=01;35:*.tga=01;35:*.xbm=01;35:*.xpm=01;35:*.tif=01;35:*.tiff=01;35:*.png=01;35:*.svg=01;35:*.svgz=01;35:*.mng=01;35:*.pcx=01;35:*.mov=01;35:*.mpg=01;35:*.mpeg=01;35:*.m2v=01;35:*.mkv=01;35:*.webm=01;35:*.webp=01;35:*.ogm=01;35:*.mp4=01;35:*.m4v=01;35:*.mp4v=01;35:*.vob=01;35:*.qt=01;35:*.nuv=01;35:*.wmv=01;35:*.asf=01;35:*.rm=01;35:*.rmvb=01;35:*.flc=01;35:*.avi=01;35:*.fli=01;35:*.flv=01;35:*.gl=01;35:*.dl=01;35:*.xcf=01;35:*.xwd=01;35:*.yuv=01;35:*.cgm=01;35:*.emf=01;35:*.ogv=01;35:*.ogx=01;35:*.aac=00;36:*.au=00;36:*.flac=00;36:*.m4a=00;36:*.mid=00;36:*.midi=00;36:*.mka=00;36:*.mp3=00;36:*.mpc=00;36:*.ogg=00;36:*.ra=00;36:*.wav=00;36:*.oga=00;36:*.opus=00;36:*.spx=00;36:*.xspf=00;36:'), ('AMENT_PREFIX_PATH', '/opt/ros/humble'), ('SHELL', '/bin/bash'), ('LESSCLOSE', '/usr/bin/lesspipe %s %s'), ('PWD', '/mnt/c/Users/mhoal/OneDrive - Koc Universitesi/Masaüstü/koc/sem 8/GradWork/dev/phoenix_bot/src/build/phoenix_bot'), ('XDG_DATA_DIRS', '/usr/local/share:/usr/share:/var/lib/snapd/desktop'), ('PYTHONPATH', '/opt/ros/humble/lib/python3.10/site-packages:/opt/ros/humble/local/lib/python3.10/dist-packages'), ('COLCON', '1'), ('WSL2_GUI_APPS_ENABLED', '1'), ('HOSTTYPE', 'x86_64'), ('WSLENV', ''), ('CMAKE_PREFIX_PATH', '/opt/ros/humble')]), 'shell': False}
+[24.234967] (phoenix_bot) StdoutLine: {'line': b'-- Install configuration: ""\n'}
+[24.248101] (phoenix_bot) StdoutLine: {'line': b'-- Execute custom install script\n'}
+[24.300431] (phoenix_bot) StdoutLine: {'line': b'-- Symlinking: /mnt/c/Users/mhoal/OneDrive - Koc Universitesi/Masa\xc3\xbcst\xc3\xbc/koc/sem 8/GradWork/dev/phoenix_bot/src/install/phoenix_bot/share/phoenix_bot/config/empty.yaml\n'}
+[24.310062] (-) TimerEvent: {}
+[24.383835] (phoenix_bot) StdoutLine: {'line': b'-- Symlinking: /mnt/c/Users/mhoal/OneDrive - Koc Universitesi/Masa\xc3\xbcst\xc3\xbc/koc/sem 8/GradWork/dev/phoenix_bot/src/install/phoenix_bot/share/phoenix_bot/description/camera.xacro\n'}
+[24.410217] (-) TimerEvent: {}
+[24.458657] (phoenix_bot) StdoutLine: {'line': b'-- Symlinking: /mnt/c/Users/mhoal/OneDrive - Koc Universitesi/Masa\xc3\xbcst\xc3\xbc/koc/sem 8/GradWork/dev/phoenix_bot/src/install/phoenix_bot/share/phoenix_bot/description/depth_camera.xacro\n'}
+[24.510440] (-) TimerEvent: {}
+[24.512161] (phoenix_bot) StdoutLine: {'line': b'-- Symlinking: /mnt/c/Users/mhoal/OneDrive - Koc Universitesi/Masa\xc3\xbcst\xc3\xbc/koc/sem 8/GradWork/dev/phoenix_bot/src/install/phoenix_bot/share/phoenix_bot/description/gazebo_control.xacro\n'}
+[24.563440] (phoenix_bot) StdoutLine: {'line': b'-- Symlinking: /mnt/c/Users/mhoal/OneDrive - Koc Universitesi/Masa\xc3\xbcst\xc3\xbc/koc/sem 8/GradWork/dev/phoenix_bot/src/install/phoenix_bot/share/phoenix_bot/description/inertial_macros.xacro\n'}
+[24.610577] (-) TimerEvent: {}
+[24.615283] (phoenix_bot) StdoutLine: {'line': b'-- Symlinking: /mnt/c/Users/mhoal/OneDrive - Koc Universitesi/Masa\xc3\xbcst\xc3\xbc/koc/sem 8/GradWork/dev/phoenix_bot/src/install/phoenix_bot/share/phoenix_bot/description/lidar.xacro\n'}
+[24.668212] (phoenix_bot) StdoutLine: {'line': b'-- Symlinking: /mnt/c/Users/mhoal/OneDrive - Koc Universitesi/Masa\xc3\xbcst\xc3\xbc/koc/sem 8/GradWork/dev/phoenix_bot/src/install/phoenix_bot/share/phoenix_bot/description/robot.urdf.xacro\n'}
+[24.710746] (-) TimerEvent: {}
+[24.730278] (phoenix_bot) StdoutLine: {'line': b'-- Symlinking: /mnt/c/Users/mhoal/OneDrive - Koc Universitesi/Masa\xc3\xbcst\xc3\xbc/koc/sem 8/GradWork/dev/phoenix_bot/src/install/phoenix_bot/share/phoenix_bot/description/robot_core.xacro\n'}
+[24.811333] (-) TimerEvent: {}
+[24.914893] (-) TimerEvent: {}
+[24.931406] (phoenix_bot) StdoutLine: {'line': b'-- Symlinking: /mnt/c/Users/mhoal/OneDrive - Koc Universitesi/Masa\xc3\xbcst\xc3\xbc/koc/sem 8/GradWork/dev/phoenix_bot/src/install/phoenix_bot/share/phoenix_bot/launch/launch_sim.launch.py\n'}
+[25.015511] (-) TimerEvent: {}
+[25.068507] (phoenix_bot) StdoutLine: {'line': b'-- Symlinking: /mnt/c/Users/mhoal/OneDrive - Koc Universitesi/Masa\xc3\xbcst\xc3\xbc/koc/sem 8/GradWork/dev/phoenix_bot/src/install/phoenix_bot/share/phoenix_bot/launch/rsp.launch.py\n'}
+[25.116054] (-) TimerEvent: {}
+[25.218856] (-) TimerEvent: {}
+[25.224836] (phoenix_bot) StdoutLine: {'line': b'-- Symlinking: /mnt/c/Users/mhoal/OneDrive - Koc Universitesi/Masa\xc3\xbcst\xc3\xbc/koc/sem 8/GradWork/dev/phoenix_bot/src/install/phoenix_bot/share/phoenix_bot/worlds/empty.world\n'}
+[25.307832] (phoenix_bot) StdoutLine: {'line': b'-- Symlinking: /mnt/c/Users/mhoal/OneDrive - Koc Universitesi/Masa\xc3\xbcst\xc3\xbc/koc/sem 8/GradWork/dev/phoenix_bot/src/install/phoenix_bot/share/phoenix_bot/worlds/obstacles.world\n'}
+[25.319346] (-) TimerEvent: {}
+[25.410771] (phoenix_bot) StdoutLine: {'line': b'-- Symlinking: /mnt/c/Users/mhoal/OneDrive - Koc Universitesi/Masa\xc3\xbcst\xc3\xbc/koc/sem 8/GradWork/dev/phoenix_bot/src/install/phoenix_bot/share/ament_index/resource_index/package_run_dependencies/phoenix_bot\n'}
+[25.420111] (-) TimerEvent: {}
+[25.511987] (phoenix_bot) StdoutLine: {'line': b'-- Symlinking: /mnt/c/Users/mhoal/OneDrive - Koc Universitesi/Masa\xc3\xbcst\xc3\xbc/koc/sem 8/GradWork/dev/phoenix_bot/src/install/phoenix_bot/share/ament_index/resource_index/parent_prefix_path/phoenix_bot\n'}
+[25.520088] (-) TimerEvent: {}
+[25.589522] (phoenix_bot) StdoutLine: {'line': b'-- Symlinking: /mnt/c/Users/mhoal/OneDrive - Koc Universitesi/Masa\xc3\xbcst\xc3\xbc/koc/sem 8/GradWork/dev/phoenix_bot/src/install/phoenix_bot/share/phoenix_bot/environment/ament_prefix_path.sh\n'}
+[25.620247] (-) TimerEvent: {}
+[25.653901] (phoenix_bot) StdoutLine: {'line': b'-- Symlinking: /mnt/c/Users/mhoal/OneDrive - Koc Universitesi/Masa\xc3\xbcst\xc3\xbc/koc/sem 8/GradWork/dev/phoenix_bot/src/install/phoenix_bot/share/phoenix_bot/environment/ament_prefix_path.dsv\n'}
+[25.720423] (-) TimerEvent: {}
+[25.725669] (phoenix_bot) StdoutLine: {'line': b'-- Symlinking: /mnt/c/Users/mhoal/OneDrive - Koc Universitesi/Masa\xc3\xbcst\xc3\xbc/koc/sem 8/GradWork/dev/phoenix_bot/src/install/phoenix_bot/share/phoenix_bot/environment/path.sh\n'}
+[25.796097] (phoenix_bot) StdoutLine: {'line': b'-- Symlinking: /mnt/c/Users/mhoal/OneDrive - Koc Universitesi/Masa\xc3\xbcst\xc3\xbc/koc/sem 8/GradWork/dev/phoenix_bot/src/install/phoenix_bot/share/phoenix_bot/environment/path.dsv\n'}
+[25.821253] (-) TimerEvent: {}
+[25.879750] (phoenix_bot) StdoutLine: {'line': b'-- Symlinking: /mnt/c/Users/mhoal/OneDrive - Koc Universitesi/Masa\xc3\xbcst\xc3\xbc/koc/sem 8/GradWork/dev/phoenix_bot/src/install/phoenix_bot/share/phoenix_bot/local_setup.bash\n'}
+[25.921305] (-) TimerEvent: {}
+[25.922299] (phoenix_bot) StdoutLine: {'line': b'-- Symlinking: /mnt/c/Users/mhoal/OneDrive - Koc Universitesi/Masa\xc3\xbcst\xc3\xbc/koc/sem 8/GradWork/dev/phoenix_bot/src/install/phoenix_bot/share/phoenix_bot/local_setup.sh\n'}
+[25.980879] (phoenix_bot) StdoutLine: {'line': b'-- Symlinking: /mnt/c/Users/mhoal/OneDrive - Koc Universitesi/Masa\xc3\xbcst\xc3\xbc/koc/sem 8/GradWork/dev/phoenix_bot/src/install/phoenix_bot/share/phoenix_bot/local_setup.zsh\n'}
+[26.021485] (-) TimerEvent: {}
+[26.029017] (phoenix_bot) StdoutLine: {'line': b'-- Symlinking: /mnt/c/Users/mhoal/OneDrive - Koc Universitesi/Masa\xc3\xbcst\xc3\xbc/koc/sem 8/GradWork/dev/phoenix_bot/src/install/phoenix_bot/share/phoenix_bot/local_setup.dsv\n'}
+[26.077650] (phoenix_bot) StdoutLine: {'line': b'-- Symlinking: /mnt/c/Users/mhoal/OneDrive - Koc Universitesi/Masa\xc3\xbcst\xc3\xbc/koc/sem 8/GradWork/dev/phoenix_bot/src/install/phoenix_bot/share/phoenix_bot/package.dsv\n'}
+[26.121786] (-) TimerEvent: {}
+[26.156967] (phoenix_bot) StdoutLine: {'line': b'-- Symlinking: /mnt/c/Users/mhoal/OneDrive - Koc Universitesi/Masa\xc3\xbcst\xc3\xbc/koc/sem 8/GradWork/dev/phoenix_bot/src/install/phoenix_bot/share/ament_index/resource_index/packages/phoenix_bot\n'}
+[26.221999] (-) TimerEvent: {}
+[26.236448] (phoenix_bot) StdoutLine: {'line': b'-- Symlinking: /mnt/c/Users/mhoal/OneDrive - Koc Universitesi/Masa\xc3\xbcst\xc3\xbc/koc/sem 8/GradWork/dev/phoenix_bot/src/install/phoenix_bot/share/phoenix_bot/cmake/phoenix_botConfig.cmake\n'}
+[26.289276] (phoenix_bot) StdoutLine: {'line': b'-- Symlinking: /mnt/c/Users/mhoal/OneDrive - Koc Universitesi/Masa\xc3\xbcst\xc3\xbc/koc/sem 8/GradWork/dev/phoenix_bot/src/install/phoenix_bot/share/phoenix_bot/cmake/phoenix_botConfig-version.cmake\n'}
+[26.322152] (-) TimerEvent: {}
+[26.345168] (phoenix_bot) StdoutLine: {'line': b'-- Symlinking: /mnt/c/Users/mhoal/OneDrive - Koc Universitesi/Masa\xc3\xbcst\xc3\xbc/koc/sem 8/GradWork/dev/phoenix_bot/src/install/phoenix_bot/share/phoenix_bot/package.xml\n'}
+[26.384533] (phoenix_bot) CommandEnded: {'returncode': 0}
+[26.422310] (-) TimerEvent: {}
+[26.522967] (-) TimerEvent: {}
+[26.633562] (-) TimerEvent: {}
+[26.734260] (-) TimerEvent: {}
+[26.834920] (-) TimerEvent: {}
+[26.935708] (-) TimerEvent: {}
+[27.039310] (-) TimerEvent: {}
+[27.139905] (-) TimerEvent: {}
+[27.240965] (-) TimerEvent: {}
+[27.342775] (-) TimerEvent: {}
+[27.443708] (-) TimerEvent: {}
+[27.544519] (-) TimerEvent: {}
+[27.645647] (-) TimerEvent: {}
+[27.666704] (phoenix_bot) JobEnded: {'identifier': 'phoenix_bot', 'rc': 0}
+[27.694090] (-) EventReactorShutdown: {}
