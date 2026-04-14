@@ -1,0 +1,1 @@
+/mnt/c/Users/mhoal/OneDrive - Koc Universitesi/Masaüstü/koc/sem 8/GradWork/dev/phoenix_bot/src/build/phoenix_bot/ament_cmake_environment_hooks/local_setup.zsh
